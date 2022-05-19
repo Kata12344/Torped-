@@ -13,13 +13,14 @@ public class Torpedo {
     
     public static void main(String[] args) {
         hajoELhelyez();
-        System.out.println(hajoHelye[2]);
+        //System.out.println(hajoHelye[2]);
         loves();
+        kiiratas();
     }
     
     public static void hajoELhelyez(){
         Random rnd = new Random();
-        int hajoKezdo = rnd.nextInt(palyahossza-hajohossza)+1;
+        int hajoKezdo = rnd.nextInt((palyahossza-hajohossza)+1)+1;
         for (int i = 0; i < hajoHelye.length; i++) {
             hajoHelye[i] = hajoKezdo+i;
         }
@@ -30,20 +31,20 @@ public class Torpedo {
         int találatokSzama = 0;
         boolean sullyedt;
         do{
-            
             System.out.print("Adj meg egy számot hogy melyik területre akarsz torpedozni: ");
             int loves = sc.nextInt();
             for (int i = 0; i < hajoHelye.length; i++) {
                 if(loves == hajoHelye[i]){
+                    System.out.println("TALÁLAT!");
                     találatokSzama++;
                 }
             }
             sullyedt = hajohossza == találatokSzama;
+            lovesekSzama++;
         }while(!sullyedt);
-        System.out.println("Lelötted vagy elfogyott a hely");
     }
 
     public static void kiiratas(){
-        System.out.printf("%d találatból süllyedt el a hajó!",lovesekSzama);
+        System.out.printf("%d találatból süllyedt el a hajó!\n",lovesekSzama);
     }
 }
