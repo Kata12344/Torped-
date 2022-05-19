@@ -33,6 +33,6 @@ public class Torpedo {
     }
 
     public static void kiiratas(){
-        
+        System.out.printf("%d találatból süllyedt el a hajó!",lovesekSzama);
     }
 }
