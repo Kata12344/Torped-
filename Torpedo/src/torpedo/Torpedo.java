@@ -1,6 +1,8 @@
 package torpedo;
 
 import java.util.Random;
+import java.util.Scanner;
+
 
 public class Torpedo {
     static int palyahossza = 7;
@@ -10,7 +12,7 @@ public class Torpedo {
     static int[] hajoHelye = new int[hajohossza];
     
     public static void main(String[] args) {
-    
+
     }
     
     public static void hajoELhelyez(){
@@ -22,11 +24,15 @@ public class Torpedo {
     }
     
     public static void loves(){
-    
+        Scanner sc = new Scanner(System.in);
+        do{
+            System.out.print("Adj meg egy számot hogy melyik területre akarsz torpedozni: ");
+            int loves = sc.nextInt();
+        }while(true);
+        
     }
-    
+
     public static void kiiratas(){
         
     }
-    
 }
