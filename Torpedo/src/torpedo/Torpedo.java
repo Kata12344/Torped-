@@ -30,7 +30,7 @@ public class Torpedo {
         int találatokSzama = 0;
         boolean sullyedt;
         do{
-            sullyedt = hajohossza == találatokSzama;
+            
             System.out.print("Adj meg egy számot hogy melyik területre akarsz torpedozni: ");
             int loves = sc.nextInt();
             for (int i = 0; i < hajoHelye.length; i++) {
@@ -38,6 +38,7 @@ public class Torpedo {
                     találatokSzama++;
                 }
             }
+            sullyedt = hajohossza == találatokSzama;
         }while(!sullyedt);
         System.out.println("Lelötted vagy elfogyott a hely");
     }
