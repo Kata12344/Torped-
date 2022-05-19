@@ -5,20 +5,21 @@ public class Torpedo {
     static int hajohossza = 3;
     static int lovesekSzama = 0;
     static int[] lovesekHelye = new int[7];
+    static int[] hajoHelye = new int[3];
     
     public static void main(String[] args) {
     
     }
     
-    public void hajoELhelyez(){
+    public static void hajoELhelyez(int palyahossza, int hajohossza){
+        
+    }
+    
+    public static void loves(){
     
     }
     
-    public void loves(){
-    
-    }
-    
-    public void kiiratas(){
+    public static void kiiratas(){
     
     }
     
