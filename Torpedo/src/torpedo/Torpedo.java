@@ -7,15 +7,16 @@ public class Torpedo {
     static int hajohossza = 3;
     static int lovesekSzama = 0;
     static int[] lovesekHelye = new int[7];
+    static int[] hajoHelye = new int[3];
     
     public static void main(String[] args) {
-        hajoELhelyez();
+
     }
     
-    public void hajoELhelyez(){
+    public static void hajoELhelyez(){
     }
     
-    public void loves(){
+    public static void loves(){
         Scanner sc = new Scanner(System.in);
         do{
             System.out.print("Adj meg egy számot hogy melyik területre akarsz torpedozni: ");
@@ -23,9 +24,8 @@ public class Torpedo {
         }while(true);
         
     }
-    
-    public void kiiratas(){
+
+    public static void kiiratas(){
     
     }
-    
 }
