@@ -12,7 +12,9 @@ public class Torpedo {
     static int[] hajoHelye = new int[hajohossza];
     
     public static void main(String[] args) {
-
+        hajoELhelyez();
+        System.out.println(hajoHelye[2]);
+        loves();
     }
     
     public static void hajoELhelyez(){
@@ -36,8 +38,8 @@ public class Torpedo {
                     találatokSzama++;
                 }
             }
-        }while(sullyedt);
-        
+        }while(!sullyedt);
+        System.out.println("Lelötted vagy elfogyott a hely");
     }
 
     public static void kiiratas(){
