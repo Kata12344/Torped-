@@ -18,10 +18,18 @@ public class Torpedo {
     
     public static void loves(){
         Scanner sc = new Scanner(System.in);
+        int találatokSzama = 0;
+        boolean sullyedt;
         do{
+            sullyedt = hajohossza == találatokSzama;
             System.out.print("Adj meg egy számot hogy melyik területre akarsz torpedozni: ");
             int loves = sc.nextInt();
-        }while(true);
+            for (int i = 0; i < hajoHelye.length; i++) {
+                if(loves == hajoHelye[i]){
+                    találatokSzama++;
+                }
+            }
+        }while(sullyedt);
         
     }
 
